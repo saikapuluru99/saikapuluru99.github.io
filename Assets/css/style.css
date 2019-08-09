@@ -1,7 +1,7 @@
 body {
   margin:0;
-  background: #000;
-  font-family: 'Work Sans', sans-serif;
+  background: #FFBF69;
+  font-family: 'Quicksand', sans-serif;
   font-weight:400;
 }
 
@@ -11,7 +11,7 @@ body {
 
 }
 header {
-  background: #1F2833;
+  background-color: #444054;
 }
 header ::after {
   content: '';
@@ -20,6 +20,9 @@ header ::after {
 }
 .logo {
   float: left;
+}
+.logo:hover {
+  opacity: .3;
 }
 nav {
   float: right;
@@ -32,13 +35,13 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  margin-left: 100px;
+  margin-left: 90px;
   padding-top: 32.5px;
 
   position:relative;
 }
 nav a{
-  color: #45A29E;
+  color: #fff;
   text-decoration:none;
   text-transform: uppercase;
 }
@@ -50,7 +53,7 @@ nav a::before {
   display:block;
   height:5px;
   width: 100%;
-  background-color: #66FCF1;
+  background-color: #fff55a;
   position: absolute;
   top:0;
   width:0%;
