@@ -57,7 +57,7 @@ nav a::before {
   position: absolute;
   top:0;
   width:0%;
-  transition: all ease-in 250ms
+  transition: all ease-in 250ms;
 }
 
 nav a:hover::before {
