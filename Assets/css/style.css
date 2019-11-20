@@ -1,6 +1,7 @@
+
 body {
   margin:0;
-  background: #FFBF69;
+  background: #F9DCE3;
   font-family: 'Work Sans', sans-serif;
   font-weight:400;
 }
@@ -11,7 +12,7 @@ body {
 
 }
 header {
-  background-color: #444054;
+  background-color: #F9AAAA;
 }
 header ::after {
   content: '';
@@ -20,6 +21,7 @@ header ::after {
 }
 .logo {
   float: left;
+  margin-right: 0px;
 }
 .logo:hover {
   opacity: .3;
@@ -35,7 +37,7 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  margin-left: 95px;
+  margin-left: 60px;
   padding-top: 32.5px;
 
   position:relative;
@@ -46,14 +48,14 @@ nav a{
   text-transform: uppercase;
 }
 nav a:hover {
-  color: #000;
+  color: #BEBBBB;
 }
 nav a::before {
   content: '';
   display:block;
   height:5px;
   width: 100%;
-  background-color: #fff55a;
+  background-color: #F08080;
   position: absolute;
   top:0;
   width:0%;
@@ -62,4 +64,27 @@ nav a::before {
 
 nav a:hover::before {
   width:100%;
+}
+#Profile{
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px #888888;
+	transition: 0.25s;
+}
+.home{
+  background-color: #F9DCE3;
+  display: flex;
+	flex-direction: row;
+  justify-content: center;
+	align-items: center;
+  padding: 100px;
+}
+#info {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+  margin-left: 52px;
+	width: 50%;
+	line-height: 28px;
 }
