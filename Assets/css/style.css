@@ -74,22 +74,22 @@ nav a:hover::before {
 }
 
 #Profile img {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
 }
 .home{
   background-color: #F9DCE3;
   display: flex;
-	flex-direction: row;
+	flex-direction: column;
   justify-content: center;
 	align-items: center;
   padding: 100px;
 }
-#containerInfo {
-  display: flex;
-	flex-direction: column;
-	justify-content: center;
-  margin-left: 52px;
-	width: 50%;
-	line-height: 28px;
+#typingtextid{
+  max-width: 50%;
+}
+#titleText{
+  max-width: 50%;
 }
