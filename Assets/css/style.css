@@ -65,12 +65,17 @@ nav a::before {
 nav a:hover::before {
   width:100%;
 }
-#Profile{
-  width: 20%;
-  height: 20%;
+#Profile {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
   border-radius: 50%;
-  box-shadow: 0px 0px 8px #888888;
-	transition: 0.25s;
+}
+
+#Profile img {
+  width: 100%;
+  height: auto;
 }
 .home{
   background-color: #F9DCE3;
@@ -80,7 +85,7 @@ nav a:hover::before {
 	align-items: center;
   padding: 100px;
 }
-#info {
+#containerInfo {
   display: flex;
 	flex-direction: column;
 	justify-content: center;
