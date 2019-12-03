@@ -1,15 +1,15 @@
 
 body {
   margin:0;
-  background: #F9DCE3;
-  font-family: 'Work Sans', sans-serif;
+  background: 	#735B84;
+  font-family: 'Quicksand', sans-serif;
   font-weight:400;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
-
+position: fixed;
 }
 header {
   background-color: #F9AAAA;
@@ -21,7 +21,8 @@ header ::after {
 }
 .logo {
   float: left;
-  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 70px;
 }
 .logo:hover {
   opacity: .3;
@@ -32,7 +33,7 @@ nav {
 nav ul {
   margin:0;
   padding:0;
-  color:
+  padding-right: 150px;
   list-style: none;
 }
 nav li {
@@ -43,23 +44,24 @@ nav li {
   position:relative;
 }
 nav a{
-  color: #fff;
+  color: #fafafa;
   text-decoration:none;
   text-transform: uppercase;
 }
 nav a:hover {
-  color: #BEBBBB;
+  color: #fafafa;
 }
 nav a::before {
   content: '';
   display:block;
-  height:5px;
+  height:20px;
   width: 100%;
-  background-color: #F08080;
+  background-color: #4B4596;
   position: absolute;
-  top:0;
+  top:5;
   width:0%;
   transition: all ease-in 250ms;
+  z-index: -1;
 }
 
 nav a:hover::before {
@@ -74,22 +76,120 @@ nav a:hover::before {
 }
 
 #Profile img {
-  width: 50%;
-  height: 100%;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px #888888;
+	transition: 0.25s;
   display:flex;
   flex-direction: column;
 }
+#ProfIcons{
+  width:35px;
+  height:35px;
+}
 .home{
-  background-color: #F9DCE3;
+  background-image: url(../images/IMG_1834.jpg);
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
   display: flex;
 	flex-direction: column;
   justify-content: center;
 	align-items: center;
+  height:81vh;
   padding: 100px;
+  padding-top: 0px;
+  padding-bottom: 150px;
 }
 #typingtextid{
   max-width: 50%;
+  line-height: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  color: #696969;
 }
 #titleText{
-  max-width: 50%;
+max-width: 50%;
+ font-family: 'Quicksand', sans-serif;
+ font-size: 50px;
+
+}
+#firstScreen{
+  height:100vh;
+}
+#AboutScreen{
+  height:100vh;
+}
+.AboutMe {
+    width: 400px;
+    height:100vh;
+    padding-top: 32.5px;
+    float: right;
+    background: #735B84;
+    z-index: 99;
+    box-shadow: 0 0 16px 8px rgba(0,0,0,.5);
+}
+#aboutProfPic {
+padding-right: 100px;
+padding-left: 100px;
+}
+#aboutName {
+
+}
+#content-outer-box{
+width:400px;
+height:400px;
+padding-top: 200px;
+}
+#content-box{
+text-align: center;
+}
+#content-side{
+  width:400px;
+  height:200px;
+  padding-top: 20px;
+}
+#aboutName {
+    font-size: 36px;
+    font-family: 'Arvo', sans-serif;
+    color: #fafafa;
+    -webkit-touch-callout: all;
+    -webkit-user-select: all;
+    -khtml-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all
+}
+#CollegeInfo {
+  color: #ECEFF1;
+}
+#buttons {
+  width: 300px;
+  height: 75px;
+
+  padding-left: 50px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+	align-items: center;
+}
+#ProfIcons:hover {
+	transform: scale(1.2);
+}
+#resume:hover{
+  background: url(../images/colorApp.svg);
+  transform: scale(1.2);
+}
+#email:hover{
+  background: url(../images/arrobared.svg);
+  transform: scale(1.2);
+}
+
+#github:hover{
+  background: url(../images/github.svg);
+  transform: scale(1.2);
+}
+#linkedin:hover{
+  background: url(../images/linkedColor.svg);
+  transform: scale(1.2);
 }

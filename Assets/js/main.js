@@ -17,7 +17,7 @@ typing.prototype.type = function() {
   }
   console.log(this.txt);
   this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-  let typeSpeed = 100;
+  let typeSpeed = 40;
   if(this.reverse) {
     typeSpeed /= 2;
   }

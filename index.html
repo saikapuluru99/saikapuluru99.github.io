@@ -4,19 +4,39 @@
 <head>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand:300|Share+Tech+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="Assets/css/style.css" />
   <title> Sai Kapuluru </title>
-  <link rel="shortcut icon" type="image/png" href="newLogo.png" />
-  <script src="Assets/js/navbar.js"></script>
+  <link rel="shortcut icon" type="image/png" href="icon.png" />
+  <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+
 </head>
 
 <body>
+<section id=firstScreen>
   <header>
     <div class="container">
-      <img src="newLogo.png" width="90" height="90" alt="logo" class="logo" >
+    <img src="icon.png" width="90" height="90" alt="logo" class="logo" >
       <nav>
         <ul>
-          <li><a href="about.html"> About</a></li>
+          <li><a href="#AboutScreen"> About</a></li>
           <li><a href="#">Professional</a></li>
           <li><a href="#"> Music</a></li>
           <li><a href="https://football.fantasysports.yahoo.com" target="_blank">Fantasy</a></li>
@@ -29,11 +49,65 @@
   <div class="home">
     <!--<img src="Sai_Kapuluru.JPG" id="Profile">-->
       <h1 id= "titleText">
-        Hi, this is my website, I am a
+        Sai Kapuluru
       </h1>
-      <h3 id='typingtextid'><span class="txt-type" data-wait="1000" data-words='["Student ", "CHICKEN-EATER"]'></span></h3>
+      <h3 id='typingtextid'>*<span class="txt-type" data-wait="1000" data-words='["Welcome to my website", "I am a Junior studying computer science at", "UC Berkeley","Feel free to explore", "Here comes some miscellaneous info about me", "TV shows I am watching:", "The Good Place", "Peaky Blinders", "and Narcos: Mexico", "# of Fantasy Teams:", "4...", "...for now"]'></span>*</h3>
     <script src="Assets/js/main.js"></script>
   </div>
-</body>
+</section>
+<section id=AboutScreen>
+  <header>
+    <div class="container">
+      <img src="icon.png" width="90" height="90" alt="logo" class="logo" >
+      <nav>
+        <ul>
+          <li><a href="about.html"> About</a></li>
+          <li><a href="#">Professional</a></li>
+          <li><a href="#"> Music</a></li>
+          <li><a href="https://football.fantasysports.yahoo.com" target="_blank">Fantasy</a></li>
+          <li><a href="#">Memorable</a></li>
+        </ul>
+      </nav>
+    </div>
 
+  </header>
+  <div class = "AboutMe">
+    <div id='content-outer-box'>
+					<div id='content-box'>
+						<div id='aboutProfPic' class='content-info'>
+              <img src="Sai_Kapuluru.JPG" id="Profile">
+						</div>
+						<div id='content-side' class='content-info'>
+							<div id='content-text'>
+								<div id='aboutName' class='hide'>
+									Sai Kapuluru
+								</div>
+                <div id='CollegeInfo'>
+                  UC Berkeley '21
+                </div>
+							</div>
+							<div id='buttons'>
+                <div id='linkedinButton'>
+                  <a href="https://www.linkedin.com/in/sai-kapuluru-983606156/" target="_blank"><img src="linkedin.svg" width="30" height="30" id="linkedin"></a>
+                </div>
+                <div id='githubButton'>
+                  <a href="github.html" target="_blank"><img src="github-logo.svg" width="30" height="30" id="github"></a>
+
+                </div>
+                <div id='ResumeButton'>
+                  <a href='cv.html' target="_blank"><img src="application.svg" width="30" height="30" id="resume"></a>
+
+                </div>
+                <div id='EmailButton'>
+                  <a href="email.html" target="_blank"><img src="at.svg" width="30" height="30" id="email"></a>
+
+                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+  </div>
+
+</section>
+</body>
 </html>
