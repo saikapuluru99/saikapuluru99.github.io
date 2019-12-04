@@ -10,6 +10,7 @@
   <title> Sai Kapuluru </title>
   <link rel="shortcut icon" type="image/png" href="icon.png" />
   <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="Assets/js/slideshow.js"></script>
   <script>
 $(document).ready(function(){
   $("a").on('click', function(event) {
@@ -71,11 +72,11 @@ $(document).ready(function(){
     </div>
 
   </header>
-  <div class = "AboutMe">
+  <div class = "AboutMeSide">
     <div id='content-outer-box'>
 					<div id='content-box'>
 						<div id='aboutProfPic' class='content-info'>
-              <img src="Sai_Kapuluru.JPG" id="Profile">
+              <img src="Sai_Kapuluru_Square.JPG" id="Profile">
 						</div>
 						<div id='content-side' class='content-info'>
 							<div id='content-text'>
@@ -106,7 +107,69 @@ $(document).ready(function(){
 						</div>
 					</div>
 				</div>
+
   </div>
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="silhoutte.jpeg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="IMG_8898.jpeg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img id="doggo" src="IMG_3889.JPG" style="width:100%" height="777">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="love.JPEG" style="width:100%" height="777">
+  </div>
+  <div class="mySlides fade">
+    <img src="beaches.JPEG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img id="doggo" src="Weaver.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="oldDoggo.JPEG" style="width:100%" height="777">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
 
 </section>
 </body>
