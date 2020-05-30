@@ -4,7 +4,7 @@ html{
 }
 body {
   margin:0;
-  background: 	#8c7ae6;
+  background: 	#7671df;
   font-family: 'Quicksand', sans-serif;
   font-weight:400;
 }
@@ -130,7 +130,7 @@ max-width: 50%;
     height:100vh;
     padding-top: 32.5px;
     float: right;
-    background: #8c7ae6;
+    background: #7671df;
     z-index: 99;
     box-shadow: 0 0 16px 8px rgba(0,0,0,.5);
 }
