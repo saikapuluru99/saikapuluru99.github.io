@@ -142,16 +142,16 @@ padding-left: 100px;
 
 }
 #content-outer-box{
-width:28vw;
-height:400px;
+width:28%;
+height:100vh;
 padding-top: 200px;
 }
 #content-box{
 text-align: center;
 }
 #content-side{
-  width:28vw;
-  height:200px;
+  width:28%;
+  height:50%;
   padding-top: 20px;
 }
 #aboutName {
