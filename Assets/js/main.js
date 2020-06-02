@@ -15,7 +15,6 @@ typing.prototype.type = function() {
   } else {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
-  console.log(this.txt);
   this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
   let typeSpeed = 40;
   if(this.reverse) {

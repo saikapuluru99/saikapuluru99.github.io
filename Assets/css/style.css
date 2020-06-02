@@ -10,9 +10,10 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-position: fixed;
+  position: fixed;
+  text-align: center;
 }
 header {
   background-color: #F9AAAA;
@@ -24,28 +25,30 @@ header ::after {
   clear: both;
 }
 .logo {
-  float: left;
+  /* float: left; */
   margin-left: 0px;
   padding-left: 70px;
+  display: inline-block;
 }
 .logo:hover {
   opacity: .3;
 }
 nav {
-  float: right;
+  /* float: right; */
   z-index: 9999;
+  
 }
 nav ul {
-  margin:0;
+  margin:;
   padding:0;
-  padding-right: 150px;
+  /* padding-right: 150px; */
   list-style: none;
+  text-align: center;
 }
 nav li {
   display: inline-block;
-  margin-left: 60px;
-  padding-top: 32.5px;
-
+  margin-left: 5%;
+  padding-top: 1.5%;
   position:relative;
 }
 nav a{
@@ -86,12 +89,15 @@ nav a:hover::before {
   border-radius: 50%;
   box-shadow: 0px 0px 8px #888888;
 	transition: 0.25s;
-  display:flex;
-  flex-direction: column;
+  display:inline-block;
 }
 #ProfIcons{
   width:35px;
   height:35px;
+}
+#about-nav {
+  background-color: rgb(94, 89, 165);
+  padding-right: 5px;
 }
 .home{
   background-image: url(../images/IMG_1834.jpg);
@@ -101,22 +107,22 @@ nav a:hover::before {
   display: flex;
 	flex-direction: column;
   justify-content: center;
-	align-items: center;
-  height:81vh;
-  padding: 100px;
-  padding-top: 0px;
-  padding-bottom: 150px;
+  align-items: center;
+  text-align: center;
+  height:100vh;
 }
 #typingtextid{
+  display: inline-block;
   max-width: 50%;
-  line-height: 10px;
+  line-height: 30px;
   font-family: 'Share Tech Mono', monospace;
   color: #696969;
 }
 #titleText{
-max-width: 50%;
- font-family: 'Quicksand', sans-serif;
- font-size: 50px;
+  display: inline-block;
+  max-width: 50%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 50px;
 
 }
 #firstScreen{
@@ -126,20 +132,15 @@ max-width: 50%;
   height:100vh;
 }
 .AboutMeSide {
-    width: 400px;
+    width: 28vw;
     height:100vh;
-    padding-top: 32.5px;
-    float: right;
+    float: left;
     background: #7671df;
     z-index: 99;
     box-shadow: 0 0 16px 8px rgba(0,0,0,.5);
 }
 #aboutProfPic {
-padding-right: 100px;
-padding-left: 100px;
-}
-#aboutName {
-
+  display: inline-block;
 }
 #content-outer-box{
 width:28vw;
@@ -147,13 +148,14 @@ height:100vh;
 padding-top: 200px;
 }
 #content-box{
+top:50%;
 text-align: center;
 }
 #content-side{
   width:28vw;
-  height:50vh;
+  height:100vh;
   padding-top: 20px;
-  text-align: center;
+  display: inline-block;
 }
 #aboutName {
     font-size: 36px;
@@ -170,14 +172,14 @@ text-align: center;
   color: #ECEFF1;
 }
 #buttons {
-  width: 300px;
-  height: 75px;
-
-  padding-left: 50px;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-	align-items: center;
+  text-align:center;
+}
+.small-pic {
+  position: relative;
+  padding-top: 2%;
+  width: 65px;
+  height: 65px;
+  display: inline-block
 }
 #ProfIcons:hover {
 	transform: scale(1.2);
@@ -206,16 +208,18 @@ text-align: center;
 .slideshow-container {
   width: 72vw;
   height:100vh;
-  float: left;
+  float: right;
   /* background-color: #E6E6FA; */
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
-  filter: contrast(70%);
+  filter: contrast(60%);
   z-index: -1;
   position: relative;
+  width: 72vw;
+  height:100vh;
 }
 
 /* Fading animation */
@@ -241,3 +245,20 @@ text-align: center;
 #boys{
   filter: contrast(70%);
 }
+
+/* @media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 728px) {
+ 
+  
+}
+
+@media only screen and (max-width: 500px) {
+
+}
+
+@media only screen and (max-width: 400px) {
+
+} */

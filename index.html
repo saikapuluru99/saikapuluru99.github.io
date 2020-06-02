@@ -34,8 +34,8 @@ $(document).ready(function(){
 <section id=firstScreen>
   <header>
     <div class="container">
-    <img src="icon.png" width="90" height="90" alt="logo" class="logo" >
       <nav>
+          <!-- <img src="icon.png" width="90" height="90" alt="logo" class="logo" > -->
         <ul>
           <li><a href="#AboutScreen"> About</a></li>
           <li><a href="#">Professional</a></li>
@@ -59,8 +59,9 @@ $(document).ready(function(){
 <section id=AboutScreen>
   <header>
     <div class="container">
-      <img src="icon.png" width="90" height="90" alt="logo" class="logo" >
-      <nav>
+      
+      <nav id='about-nav'>
+          <!-- <img src="icon.png" width="90" height="90" alt="logo" class="logo" > -->
         <ul>
           <li><a href="about.html"> About</a></li>
           <li><a href="#">Professional</a></li>
@@ -86,24 +87,25 @@ $(document).ready(function(){
                 <div id='CollegeInfo'>
                   UC Berkeley '21
                 </div>
-							</div>
+              </div>
+              <div id='button-wrapper'>
 							<div id='buttons'>
-                <div id='linkedinButton'>
+                <div class='small-pic'>
                   <a href="https://www.linkedin.com/in/sai-kapuluru-983606156/" target="_blank"><img src="linkedin.svg" width="30" height="30" id="linkedin"></a>
                 </div>
-                <div id='githubButton'>
+                <div class='small-pic'>
                   <a href="github.html" target="_blank"><img src="github-logo.svg" width="30" height="30" id="github"></a>
 
                 </div>
-                <div id='ResumeButton'>
+                <div class='small-pic'>
                   <a href='cv.html' target="_blank"><img src="application.svg" width="30" height="30" id="resume"></a>
 
                 </div>
-                <div id='EmailButton'>
+                <div class='small-pic'>
                   <a href="email.html" target="_blank"><img src="at.svg" width="30" height="30" id="email"></a>
-
                 </div>
-							</div>
+              </div>
+            </div>
 						</div>
 					</div>
 				</div>
@@ -111,32 +113,32 @@ $(document).ready(function(){
   </div>
   <!-- Slideshow container -->
 <div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="silhoutte.jpeg" style="width:100%"height="822">
+  <div class="mySlides">
+    <img src="silhoutte.jpeg" style="width:100%; height:100%">
   </div>
   <div class="mySlides fade">
-    <img src="IMG_8898.jpeg" style="width:100%"height="822">
+    <img src="IMG_8898.jpeg" style="width:100%; height: 100%;">
   </div>
   <div class="mySlides fade">
-    <img id="doggo" src="IMG_3889.JPG" style="width:100%" height="822">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="love.JPEG" style="width:100%" height="822">
-  </div>
-  <div class="mySlides fade">
-    <img src="beaches.JPEG" style="width:100%"height="822">
-  </div>
-  <div class="mySlides fade">
-    <img id="doggo" src="Weaver.jpg" style="width:100%"height="822">
+    <img id="doggo" src="IMG_3889.JPG" style="width:100%; height:100%">
   </div>
 
-  <div class="mySlides fade">
-    <img src="oldDoggo.JPEG" style="width:100%" height="822">
+  <div class="mySlides ">
+    <img src="love.JPEG" style="width:100%; height:100%">
+  </div>
+  <div class="mySlides">
+    <img src="beaches.JPEG" style="width:100%; height: 100%;">
+  </div>
+  <div class="mySlides">
+    <img id="doggo" src="Weaver.jpg" style="width:100%;height:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="oldDoggo.JPEG" style="width:100%; height:100%" >
   </div>
 </div>
 
-<!-- <div style="text-align:center">
+<div style="text-align:center">
   <span class="dot"></span>
   <span class="dot"></span>
   <span class="dot"></span>
@@ -144,7 +146,7 @@ $(document).ready(function(){
   <span class="dot"></span>
   <span class="dot"></span>
   <span class="dot"></span>
-</div> -->
+</div>
 
 <script>
 var slideIndex = 0;
